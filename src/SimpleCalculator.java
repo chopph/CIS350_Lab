@@ -18,6 +18,32 @@ public class SimpleCalculator {
 		return a / b;
 	}
 	
+	public int exponent(int a, int b) {
+		int rtn=1;
+		
+		for ( int i =0; i < b; i++) {
+			rtn *= a;
+		}
+		
+		return rtn;
+		
+	}
+	
+	public int absolute(int a) {
+		int rtn;
+		if(a<0) {
+			rtn = a*=-1;
+		}
+		
+		else {
+			rtn = a;
+		}
+		
+		return rtn;
+		
+	}
+	
+	
 	public static final void main(String[] args) {
 		System.out.println("Hey there CIS350.");
 	}

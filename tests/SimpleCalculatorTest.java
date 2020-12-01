@@ -30,4 +30,16 @@ public class SimpleCalculatorTest {
 	assertEquals(calc.div(8, 2), 4);
 	}
 	
+	@Test
+	public void testExponent() {
+	SimpleCalculator calc = new SimpleCalculator();
+	assertEquals(calc.exponent(2, 4), 16);
+	}
+	
+	@Test
+	public void testAbsolute() {
+	SimpleCalculator calc = new SimpleCalculator();
+	assertEquals(calc.absolute(-64), 64);
+	}
+	
 }
